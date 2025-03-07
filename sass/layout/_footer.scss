@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 3.9rem 0;
-  background-color: $Grayish-Blue;
+  background-color: transparentize($Grayish-Blue, 0.9);
 
   &__content {
     display: flex;
