@@ -7,6 +7,7 @@
 
   @include screen(mobile) {
     margin-bottom: 11rem;
+    margin-bottom: 9.1rem;
   }
 
   &__heading {
@@ -30,16 +31,15 @@
   }
 
   &__image {
-    width: 81.2rem;
-    height: 47.5rem;
+    width: 100%;
+    height: 56.5rem;
     background-image: url(/images/image-devices.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 
     @include screen(mobile) {
-      width: 100%;
       height: 21rem;
-      background-position: center;
     }
   }
 }

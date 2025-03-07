@@ -247,6 +247,7 @@ body {
 @media (max-width: 850px) {
   .clipboard {
     margin-bottom: 11rem;
+    margin-bottom: 9.1rem;
   }
 }
 .clipboard__heading {
@@ -270,17 +271,16 @@ body {
   }
 }
 .clipboard__image {
-  width: 81.2rem;
-  height: 47.5rem;
+  width: 100%;
+  height: 56.5rem;
   background-image: url(/images/image-devices.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 @media (max-width: 850px) {
   .clipboard__image {
-    width: 100%;
     height: 21rem;
-    background-position: center;
   }
 }
 
