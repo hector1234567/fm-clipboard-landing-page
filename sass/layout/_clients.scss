@@ -1,18 +1,56 @@
 .clients {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+
+  @include screen(mobile) {
+    margin-bottom: 17rem;
+  }
+
+  &__list {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    margin-bottom: 15rem;
+    align-items: center;
+    width: 100%;
+    max-width: 111rem;
+    justify-content: space-between;
 
-    &__list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 111rem;
-        justify-content: space-between;
+    @include screen(mobile) {
+      flex-direction: column;
+      height: 43.9rem;
+      max-width: 13.9rem;
+    }
+  }
+
+  &__logo {
+    &--1 img {
+      @include screen(mobile) {
+        height: 4.1rem;
+      }
     }
 
-    &__logo {
-        height: 7.2rem;
+    &--2 img {
+      @include screen(mobile) {
+        height: 4.1rem;
+      }
     }
+
+    &--3 img {
+      @include screen(mobile) {
+        height: 3rem;
+      }
+    }
+
+    &--4 img {
+      @include screen(mobile) {
+        height: 5rem;
+      }
+    }
+
+    &--5 img {
+      @include screen(mobile) {
+        height: 2.7rem;
+      }
+    }
+  }
 }

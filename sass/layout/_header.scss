@@ -11,24 +11,56 @@
   background-repeat: no-repeat;
   margin-bottom: 15rem;
 
+  @include screen(mobile) {
+    padding-top: 12.3rem;
+    background-image: linear-gradient(
+        transparent 0,
+        transparent 50%,
+        $White 100%
+      ),
+      url(/images/bg-header-mobile.png);
+    margin-bottom: 16rem;
+  }
+
   &__logo {
-    width: 12.5rem;
     height: 12.5rem;
     margin-bottom: 5.6rem;
+
+    @include screen(mobile) {
+      max-width: 31.1rem;
+    }
   }
 
   &__heading {
     margin-bottom: 1.6rem;
+
+    @include screen(mobile) {
+      max-width: 31.1rem;
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__text {
     width: 100%;
     max-width: 73rem;
     margin-bottom: 4.8rem;
+
+    @include screen(mobile) {
+      max-width: 31rem;
+      margin-bottom: 4.8rem;
+    }
   }
 
   &__buttons {
     display: flex;
     gap: 1.6rem;
+
+    @include screen(mobile) {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 31rem;
+      gap: 2.4rem;
+    }
   }
 }

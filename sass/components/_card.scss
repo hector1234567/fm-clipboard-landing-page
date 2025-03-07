@@ -1,16 +1,28 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 35rem;
 
-    &__icon {
-        margin-bottom: 4.4rem;
-        height: 4rem;
-    }
+  @include screen(mobile) {
+    max-width: 31.1rem;
+  }
 
-    &__heading {
-        margin-bottom: 1.6rem;
+  &__icon {
+    margin-bottom: 4.4rem;
+    height: 4rem;
+
+    @include screen(mobile) {
+      margin-bottom: 4rem;
     }
+  }
+
+  &__heading {
+    margin-bottom: 1.6rem;
+
+    @include screen(mobile) {
+      margin-bottom: 1.8rem;
+    }
+  }
 }

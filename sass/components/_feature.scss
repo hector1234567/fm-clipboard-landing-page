@@ -1,8 +1,16 @@
 .feature {
-    width: 100%;
-    max-width: 35rem;
+  width: 100%;
+  max-width: 35rem;
 
-    &__heading {
-        margin-bottom: .8rem;
+  @include screen(mobile) {
+    max-width: 31.2rem;
+  }
+
+  &__heading {
+    margin-bottom: 0.8rem;
+
+    @include screen(mobile) {
+      margin-bottom: 1rem;
     }
+  }
 }
