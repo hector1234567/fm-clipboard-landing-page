@@ -1,0 +1,71 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.9rem 0;
+  background-color: $Grayish-Blue;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    max-width: 111rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 5.5rem;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    margin-left: 13.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 48rem;
+    row-gap: 1.2rem;
+  }
+
+  &__link {
+    width: 16rem;
+
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: 0.014rem;
+      font-weight: 400;
+      color: $Dark-Grayish-Blue;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $Strong-Cyan;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-left: auto;
+
+    a {
+      list-style: none;
+      width: 2.4rem;
+      font-size: 2.4rem;
+      color: transparent;
+      background-color: $Dark-Grayish-Blue;
+      background-clip: text;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $Strong-Cyan;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.6rem;
+  padding: 0 3.6rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: $White;
+  text-decoration: none;
+  border: none;
+  border-radius: 5.6rem;
+
+  &__primary {
+    background-color: $Strong-Cyan;
+    border-bottom: 0.4rem solid darken($Strong-Cyan, 8%);
+    box-shadow: 0 1rem 2rem 0 hsla(160, 64%, 72%, 50.33%);
+  }
+
+  &__secondary {
+    background-color: $Light-Blue;
+    border-bottom: 0.4rem solid darken($Light-Blue, 8%);
+    box-shadow: 0 1rem 2rem 0 hsla(212, 64%, 72%, 0.503);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

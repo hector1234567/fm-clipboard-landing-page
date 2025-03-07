@@ -1,1 +1,15 @@
-@import "base/base"
+@import "base/colors";
+@import "base/typography";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/snippets";
+@import "layout/clipboard";
+@import "layout/workflow";
+@import "layout/clients";
+@import "layout/download";
+@import "layout/footer";
+
+@import "components/button";
+@import "components/feature";
+@import "components/card";
